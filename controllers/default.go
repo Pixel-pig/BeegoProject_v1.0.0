@@ -54,26 +54,53 @@ func (c *MainController) Get() {
 //	}
 //}
 
-//post类型的请求(解析json类型)
+/**post类型的请求(解析json类型)**/
+//func (c *MainController) Post() {
+//	//定义一个接受json的结构体
+//	var person models.Person
+//
+//	//c.Ctx.Request.Body请求体数据
+//	data, err := ioutil.ReadAll(c.Ctx.Request.Body)
+//	if err != nil {
+//		c.Ctx.WriteString("数据接收错误")
+//		return
+//	}
+//	err = json.Unmarshal(data,&person)
+//	if err != nil {
+//		c.Ctx.WriteString("数据解析错误")
+//		return
+//	}
+//	c.Ctx.WriteString("数据接收成功")
+//	fmt.Println("姓名",person.Name)
+//	fmt.Println("年龄",person.Age)
+//	fmt.Println("性别",person.Sex)
+//}
+
+/**
+ *练习post类型的请求解析json数据
+ */
 func (c *MainController) Post() {
-	//定义一个接受json的结构体
+	//定义一个person结构体
 	var person models.Person
 
-	//c.Ctx.Request.Body请求体数据
-	data, err := ioutil.ReadAll(c.Ctx.Request.Body)
+	//接收请求的请求体，得到一个][byte数据
+	dataByte, err := ioutil.ReadAll(c.Ctx.Request.Body)
 	if err != nil {
-		c.Ctx.WriteString("数据接收错误")
+		c.Ctx.WriteString("接收数据错误")
 		return
 	}
-	err = json.Unmarshal(data,&person)
+
+	//解析[]byte格式的json数据
+	err = json.Unmarshal(dataByte,&person)
 	if err != nil {
-		c.Ctx.WriteString("数据解析错误")
+		c.Ctx.WriteString("解析数据错误")
 		return
 	}
-	c.Ctx.WriteString("数据接收成功")
-	fmt.Println("姓名",person.Name)
-	fmt.Println("年龄",person.Age)
-	fmt.Println("性别",person.Sex)
+	c.Ctx.WriteString("获取数据成功")
+	fmt.Println("名字", person.Name)
+	fmt.Println("地址", person.Address)
+	fmt.Println("昵称", person.Nick)
+	fmt.Println("生日", person.Birthday)
 }
 
 
