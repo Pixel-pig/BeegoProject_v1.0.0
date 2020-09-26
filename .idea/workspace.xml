@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d132d4d2-0617-4ec5-8138-0525df4a4965" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/registerControllers.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db_mysql/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/responseResult.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/default.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/routers/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/registerControllers.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/registerControllers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_mysql/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/db_mysql/db.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,21 +108,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600999532520" />
-    <state width="774" height="172" key="GridCell.Tab.0.bottom" timestamp="1601015803230">
+    <state width="778" height="184" key="GridCell.Tab.0.bottom" timestamp="1601020044605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="774" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601015803230" />
-    <state width="774" height="172" key="GridCell.Tab.0.center" timestamp="1601015803229">
+    <state width="778" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601020044605" />
+    <state width="778" height="184" key="GridCell.Tab.0.center" timestamp="1601020044605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="774" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601015803229" />
-    <state width="774" height="172" key="GridCell.Tab.0.left" timestamp="1601015803229">
+    <state width="778" height="184" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601020044605" />
+    <state width="778" height="184" key="GridCell.Tab.0.left" timestamp="1601020044605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="774" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601015803229" />
-    <state width="774" height="172" key="GridCell.Tab.0.right" timestamp="1601015803229">
+    <state width="778" height="184" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601020044605" />
+    <state width="778" height="184" key="GridCell.Tab.0.right" timestamp="1601020044605">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="774" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601015803229" />
+    <state width="778" height="184" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601020044605" />
   </component>
 </project>
